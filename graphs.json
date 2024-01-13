@@ -1,0 +1,71 @@
+[
+    {
+      "graphId": "Graph1",
+      "nodes": [
+        {
+          "name": "yu ilhae blog",
+          "type": "category",
+          "coordinates": { "x": 0, "y": 0, "z": 0 },
+          "connectedTo": ["this is simple post1", "이것은 한글 타이틀입니다."]
+        },
+        {
+          "name": "this is simple post1",
+          "type": "post",
+          "coordinates": { "x": -3, "y": 0, "z": 1 },
+          "connectedTo": ["Category1"]
+        },
+        {
+          "name": "이것은 한글 타이틀입니다.",
+          "type": "post",
+          "coordinates": { "x": 4, "y": 0, "z": 3 },
+          "connectedTo": ["Category1"]
+        }
+      ]
+    },
+    {
+      "graphId": "Graph2",
+      "nodes": [
+        {
+          "name": "NodeA",
+          "type": "category",
+          "coordinates": { "x": -10, "y": 0, "z": 0 },
+          "connectedTo": ["NodeB"]
+        },
+        {
+          "name": "NodeB",
+          "type": "post",
+          "coordinates": { "x": -7, "y": 0, "z": 3 },
+          "connectedTo": ["NodeA", "NodeC"]
+        },
+        {
+          "name": "NodeC",
+          "type": "post",
+          "coordinates": { "x": -10, "y": 0, "z": -3 },
+          "connectedTo": ["NodeB"]
+        }
+      ]
+    },
+    {
+      "graphId": "Graph3",
+      "nodes": [
+        {
+          "name": "NodeA",
+          "type": "category",
+          "coordinates": { "x": -20, "y": 0, "z": 0 },
+          "connectedTo": ["NodeB"]
+        },
+        {
+          "name": "NodeB",
+          "type": "post",
+          "coordinates": { "x": -20, "y": 0, "z": 3 },
+          "connectedTo": ["NodeA", "NodeC"]
+        },
+        {
+          "name": "NodeC",
+          "type": "post",
+          "coordinates": { "x": -20, "y": 0, "z": -2 },
+          "connectedTo": ["NodeB"]
+        }
+      ]
+    }
+  ]
