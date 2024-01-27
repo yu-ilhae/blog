@@ -1,0 +1,296 @@
+{
+    "node_list": [
+        {
+            "id": "main",
+            "url": "main url",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "color": "#FF0000",
+            "type": "main",
+            "connected_node": []
+        },
+        {
+            "id": "category1",
+            "url": "category1 url",
+            "position": [
+                1.374455268605095,
+                15.931796421373539,
+                -8.714491589127729
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category2",
+            "url": "category2 url",
+            "position": [
+                4.176096924104755,
+                7.685729665112123,
+                11.053871179443556
+            ],
+            "color": "#0000FF",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category3",
+            "url": "category3 url",
+            "position": [
+                -10.329985226794909,
+                -8.902135860906235,
+                8.033777698811006
+            ],
+            "color": "#0000FF",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category4",
+            "url": "category4 url",
+            "position": [
+                3.050143144249786,
+                -1.9066969850983355,
+                -14.321235568969952
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category5",
+            "url": "category5 url",
+            "position": [
+                -16.28177998976568,
+                10.41722011602884,
+                -7.30782203418952
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category6",
+            "url": "category6 url",
+            "position": [
+                14.294744788154393,
+                6.936974351349209,
+                -0.6449793508128163
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category7",
+            "url": "category7 url",
+            "position": [
+                -7.669983714285654,
+                -14.193290428842948,
+                -12.981409712111008
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category8",
+            "url": "category8 url",
+            "position": [
+                11.780226114581305,
+                -1.4809704284287226,
+                22.704693207621215
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category9",
+            "url": "category9 url",
+            "position": [
+                15.451648863966682,
+                -16.029658868561473,
+                -2.674941428854307
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category10",
+            "url": "category10 url",
+            "position": [
+                17.451460380620627,
+                12.222265463456395,
+                -18.184300270899573
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category11",
+            "url": "category11 url",
+            "position": [
+                12.487620693301473,
+                -23.291657944690517,
+                -17.281667821981053
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category12",
+            "url": "category12 url",
+            "position": [
+                -3.936162684155054,
+                20.27089424027406,
+                19.13986108798805
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category13",
+            "url": "category13 url",
+            "position": [
+                5.005512822559337,
+                -28.726231206240946,
+                -2.0399522205165033
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category14",
+            "url": "category14 url",
+            "position": [
+                -24.650209487554,
+                -2.6980818107300455,
+                -14.99075331698216
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category15",
+            "url": "category15 url",
+            "position": [
+                -20.51449776760935,
+                -2.427689544084522,
+                19.258956946946206
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category16",
+            "url": "category16 url",
+            "position": [
+                13.415230486648536,
+                25.842954944481523,
+                18.672345330517363
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category17",
+            "url": "category17 url",
+            "position": [
+                26.47686824393043,
+                -1.1644062732565164,
+                15.616177461321573
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category18",
+            "url": "category18 url",
+            "position": [
+                -20.658068730094588,
+                -26.228344365534433,
+                -8.017374680939122
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category19",
+            "url": "category19 url",
+            "position": [
+                -0.15415350988593096,
+                13.81567708440426,
+                -27.481769915070373
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        },
+        {
+            "id": "category20",
+            "url": "category20 url",
+            "position": [
+                29.12939627372454,
+                -9.13147069950737,
+                -3.6557536975953266
+            ],
+            "color": "#00FF00",
+            "type": "category",
+            "connected_node": [
+                "main"
+            ]
+        }
+    ]
+}
