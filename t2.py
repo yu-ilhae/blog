@@ -9,7 +9,7 @@ category_json={
     'categories':[]
 }
 
-for i in range(1,21):
+for i in range(1,501):
     category_json['categories'].append('category'+str(i))
 
 with open(os.path.join(PATH, 'category_list.json'), 'w') as file:

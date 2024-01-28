@@ -11,12 +11,12 @@ NODE_TABLE_PATH = r'.'
 
 INITIAL_MIN_CATEGORY_POSITION_MAGNITUDE = 13
 INITIAL_MAX_CATEGORY_POSITION_MAGNITUDE = 20
-CATEGORY_MIN_DISTANCE = 15
+CATEGORY_MIN_DISTANCE = 20
 
 POST_ANGLE = (-20, 20)
 INITIAL_MIN_POST_POSITION_MAGNITUDE = 2
 INITIAL_MAX_POST_POSITION_MAGNITUDE = 5
-POST_MIN_DISTANCE = 3
+POST_MIN_DISTANCE = 4
 
 def isValidPosition(position):
     if not isinstance(position, list): return False
@@ -86,15 +86,15 @@ for category_name in category_list['categories']:
     with open(os.path.join(NODE_TABLE_PATH, 'categories', category_name, 'node_table.json'), 'r') as file:
         category_tables[category_name] = json.load(file)
 
-# for i in range(4, 21):
-#     sample = copy.deepcopy(node_table['node_list'][1])
-#     sample['id'] = "category"+str(i)
-#     sample['url'] = "category"+str(i)+" url"    
-#     node_table['node_list'].append(sample)
-#     node_table['node_list'][0]['connected_node'].append(sample['id'])
+for i in range(4, 501):
+    sample = copy.deepcopy(node_table['node_list'][1])
+    sample['id'] = "category"+str(i)
+    sample['url'] = "category"+str(i)+" url"    
+    node_table['node_list'].append(sample)
+    # node_table['node_list'][0]['connected_node'].append(sample['id'])
 
-# with open(os.path.join(NODE_TABLE_PATH, 'node_table.json'), 'w') as file:
-#     json.dump(node_table, file, indent=4)
+with open(os.path.join(NODE_TABLE_PATH, 'node_table.json'), 'w') as file:
+    json.dump(node_table, file, indent=4)
 
 categories = []
 category_positions = []
@@ -129,6 +129,7 @@ for idx, category in enumerate(categories):
                 min_category_position_magnitude += step
                 max_category_position_magnitude += step
 
+print("category done")
 
 for idx, category in enumerate(categories):
 
@@ -148,21 +149,22 @@ for idx, category in enumerate(categories):
     min_post_position_magnitude = INITIAL_MIN_POST_POSITION_MAGNITUDE
     max_post_position_magnitude = INITIAL_MAX_POST_POSITION_MAGNITUDE
 
-    for idx, post in enumerate(posts):
-        if not isValidPosition(post_positions[idx]):
+    for idx2, post in enumerate(posts):
+        if not isValidPosition(post_positions[idx2]):
             temp_position_validity = False
             while not temp_position_validity:
                 temp_position = makeApproximateOrthogonalPosition(category['position'], POST_ANGLE, min_post_position_magnitude, max_post_position_magnitude)
                 min_distance = findClosestDistance(temp_position, post_positions)
                 if min_distance > POST_MIN_DISTANCE:
-                    post_positions[idx,:] = temp_position
-                    posts[idx]['position'] = temp_position.tolist()
+                    post_positions[idx2,:] = temp_position
+                    posts[idx2]['position'] = temp_position.tolist()
                     temp_position_validity = True
                 if random.uniform(0, 1) > 0.5:
                     step = random.uniform(0, 1)
                     min_post_position_magnitude += step
                     max_post_position_magnitude += step
 
+    print(idx, "done")
 
 with open(os.path.join(NODE_TABLE_PATH, 'node_table.json'), 'w') as file:
     json.dump(node_table, file, indent=4)

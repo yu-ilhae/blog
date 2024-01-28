@@ -1,0 +1,270 @@
+{
+    "node_list": [
+        {
+            "id": "post0",
+            "url": "blank",
+            "position": [
+                -12.92523411688458,
+                -77.20740204955338,
+                -13.385465198465264
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post1",
+            "url": "blank",
+            "position": [
+                -8.875640242159843,
+                -77.48762257537777,
+                -14.321058618799775
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post2",
+            "url": "blank",
+            "position": [
+                -15.673150065721174,
+                -77.31833566813089,
+                -18.488299444370345
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post3",
+            "url": "blank",
+            "position": [
+                -16.36694394652705,
+                -77.78647212705226,
+                -11.325069257727128
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post4",
+            "url": "blank",
+            "position": [
+                -7.066268959881602,
+                -77.51487935773478,
+                -22.326485637832146
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post5",
+            "url": "blank",
+            "position": [
+                -10.4685298435946,
+                -75.57748606564881,
+                -24.197134478750115
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post6",
+            "url": "blank",
+            "position": [
+                -10.853369225847608,
+                -78.94192347357121,
+                -8.20806602947705
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post7",
+            "url": "blank",
+            "position": [
+                -19.82946143074774,
+                -79.47767029152087,
+                -13.198537140603758
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post8",
+            "url": "blank",
+            "position": [
+                -5.984149405472935,
+                -79.89393621428769,
+                -9.70282200401744
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post9",
+            "url": "blank",
+            "position": [
+                -2.447352831593939,
+                -74.75712305658932,
+                -22.08011292039556
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post10",
+            "url": "blank",
+            "position": [
+                -16.52344405389747,
+                -75.32448177138116,
+                -22.686254419368453
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post11",
+            "url": "blank",
+            "position": [
+                -3.754689309449999,
+                -81.6057429329128,
+                -13.721007877414678
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post12",
+            "url": "blank",
+            "position": [
+                -1.903709268549889,
+                -75.96934964914847,
+                -13.478070065653156
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post13",
+            "url": "blank",
+            "position": [
+                -20.921397649221614,
+                -76.23784206598232,
+                -18.182480579018247
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post14",
+            "url": "blank",
+            "position": [
+                -0.44049993624160955,
+                -82.07826423801167,
+                -17.378722338615507
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post15",
+            "url": "blank",
+            "position": [
+                -19.943784298012055,
+                -76.16706882386529,
+                -25.439446459764365
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post16",
+            "url": "blank",
+            "position": [
+                -21.82610734632115,
+                -75.2279741226281,
+                -12.668977636020234
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post17",
+            "url": "blank",
+            "position": [
+                0.02177973837759417,
+                -75.25966584204883,
+                -17.763377087075398
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        },
+        {
+            "id": "post18",
+            "url": "blank",
+            "position": [
+                -24.725637236806804,
+                -75.28174403220876,
+                -19.03297623323217
+            ],
+            "color": "#00FF00",
+            "type": "post",
+            "connected_node": [
+                "category75"
+            ]
+        }
+    ]
+}
