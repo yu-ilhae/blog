@@ -9,14 +9,22 @@ RESET_ALL_POSITION=True
 
 NODE_TABLE_PATH = r'.'
 
-INITIAL_MIN_CATEGORY_POSITION_MAGNITUDE = 13
-INITIAL_MAX_CATEGORY_POSITION_MAGNITUDE = 20
-CATEGORY_MIN_DISTANCE = 20
+INITIAL_MIN_CATEGORY_POSITION_MAGNITUDE = 20
+INITIAL_MAX_CATEGORY_POSITION_MAGNITUDE = 30
+CATEGORY_MIN_DISTANCE = 35
 
 POST_ANGLE = (-20, 20)
 INITIAL_MIN_POST_POSITION_MAGNITUDE = 2
 INITIAL_MAX_POST_POSITION_MAGNITUDE = 5
-POST_MIN_DISTANCE = 4
+POST_MIN_DISTANCE = 3
+
+
+def generate_random_hex_color(seed=None):
+    if seed is not None:
+        random.seed(seed)
+    color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
+    return color
+
 
 def isValidPosition(position):
     if not isinstance(position, list): return False
@@ -86,15 +94,24 @@ for category_name in category_list['categories']:
     with open(os.path.join(NODE_TABLE_PATH, 'categories', category_name, 'node_table.json'), 'r') as file:
         category_tables[category_name] = json.load(file)
 
-for i in range(4, 501):
-    sample = copy.deepcopy(node_table['node_list'][1])
-    sample['id'] = "category"+str(i)
-    sample['url'] = "category"+str(i)+" url"    
-    node_table['node_list'].append(sample)
-    # node_table['node_list'][0]['connected_node'].append(sample['id'])
+# template = {
+#     'id': 'category',
+#     'url': 'blank',
+#     'position':[],
+#     'color':'#00FF00',
+#     'type':'category',
+#     'connected_node':['main']
+# }
 
-with open(os.path.join(NODE_TABLE_PATH, 'node_table.json'), 'w') as file:
-    json.dump(node_table, file, indent=4)
+# for i in range(1, 101):
+#     sample = copy.deepcopy(template)
+#     sample['id'] = "category"+str(i)
+#     sample['url'] = "category"+str(i)+" url"
+#     sample['color'] = generate_random_hex_color(seed=i)
+#     node_table['node_list'].append(sample)
+
+# with open(os.path.join(NODE_TABLE_PATH, 'node_table.json'), 'w') as file:
+#     json.dump(node_table, file, indent=4)
 
 categories = []
 category_positions = []
@@ -124,7 +141,7 @@ for idx, category in enumerate(categories):
                 category_positions[idx,:] = temp_position
                 categories[idx]['position'] = temp_position.tolist()
                 temp_position_validity = True
-            if random.uniform(0, 1) > 0.5:
+            if random.uniform(0, 1) < 0.1:
                 step = random.uniform(0, 1)
                 min_category_position_magnitude += step
                 max_category_position_magnitude += step
@@ -159,7 +176,7 @@ for idx, category in enumerate(categories):
                     post_positions[idx2,:] = temp_position
                     posts[idx2]['position'] = temp_position.tolist()
                     temp_position_validity = True
-                if random.uniform(0, 1) > 0.5:
+                if random.uniform(0, 1) < 0.1:
                     step = random.uniform(0, 1)
                     min_post_position_magnitude += step
                     max_post_position_magnitude += step
